@@ -1,0 +1,18 @@
+WIDTH=8;
+DEPTH=256;
+
+ADDRESS_RADIX=UNS;
+DATA_RADIX=BIN;
+
+CONTENT BEGIN
+	0    :   00000001; % LDAA%
+	1    :   00000010; %Data Input = 2%
+	2    :   00000000; %TAB%
+	3    :   00001110; %SARA%
+	[4..5]  :   00000100; %ABA%
+	6    :   00000110; %SLL%
+	7    :   00000001; %Data Input = 1%
+	8    :   00000111; %JMP%
+	9    :   00000100; %Data Input = 4%
+	[10..255]  :   00000000;
+END;
